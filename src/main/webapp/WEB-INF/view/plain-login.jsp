@@ -4,7 +4,7 @@
 <html>
 
 <head>
-	<title>Custom Login Page</title>
+	<title>Login Page</title>
 	
 	<style>
 		.failed {

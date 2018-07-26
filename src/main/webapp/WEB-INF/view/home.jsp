@@ -12,8 +12,19 @@
 	<hr>
 	
 	<p>
-	Welcome
+		Welcome
 	</p>
+	
+	<hr>
+	
+	<!-- display user name and role -->
+	<p>
+		User: <security:authentication property="principal.username"/>
+		<br><br>
+		Roles(s): <security:authentication property="principal.authorities"/>
+	</p>
+	
+	<hr>
 	
 	<!-- logout button -->
 	<form:form action="${pageContext.request.contextPath}/logout"

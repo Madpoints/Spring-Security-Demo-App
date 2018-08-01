@@ -34,6 +34,14 @@
 	
 	<hr>
 	
+	<!-- link to point to /systems -->
+	<p>
+		<a href="${pageContext.request.contextPath}/systems">IT Systems Meeting</a>
+		(Admin only)
+	</p>
+	
+	<hr>
+	
 	<!-- logout button -->
 	<form:form action="${pageContext.request.contextPath}/logout"
 			   method="POST">

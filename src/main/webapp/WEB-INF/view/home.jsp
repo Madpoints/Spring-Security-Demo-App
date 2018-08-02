@@ -24,7 +24,6 @@
 		Roles(s): <security:authentication property="principal.authorities"/>
 	</p>
 	
-	
 	<security:authorize access="hasRole('MANAGER')">
 		
 		<!-- link to point to /leaders -->
@@ -46,7 +45,7 @@
 	</security:authorize>
 	
 	<hr>
-	
+	 
 	<!-- logout button -->
 	<form:form action="${pageContext.request.contextPath}/logout"
 			   method="POST">

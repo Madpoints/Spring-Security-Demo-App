@@ -26,19 +26,25 @@
 	
 	<hr>
 	
-	<!-- link to point to /leaders -->
-	<p>
-		<a href="${pageContext.request.contextPath}/leaders">Leadership Meeting</a>
-		(Management only)
-	</p>
+	<security:authorize access="hasRole('MANAGER')">
+		
+		<!-- link to point to /leaders -->
+		<p>
+			<a href="${pageContext.request.contextPath}/leaders">Leadership Meeting</a>
+			(Management only)
+		</p>
 	
-	<hr>
+	</security:authorize>
 	
-	<!-- link to point to /systems -->
-	<p>
-		<a href="${pageContext.request.contextPath}/systems">IT Systems Meeting</a>
-		(Admin only)
-	</p>
+	<security:authorize access="hasRole('ADMIN')">
+	
+		<!-- link to point to /systems -->
+		<p>
+			<a href="${pageContext.request.contextPath}/systems">IT Systems Meeting</a>
+			(Admin only)
+		</p>
+	
+	</security:authorize>
 	
 	<hr>
 	
